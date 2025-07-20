@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main">
+        <h1>Age Calculator</h1>
+        <input type="text" id="name" placeholder="your name">
+
+        <select id="month">
+        <option value="">Month</option>
+        <option value="0">January</option>
+        <option value="1">February</option>
+        <option value="2">March</option>
+        <option value="3">April</option>
+        <option value="4">May</option>
+        <option value="5">June</option>
+        <option value="6">July</option>
+        <option value="7">August</option>
+        <option value="8">September</option>
+        <option value="9">October</option>
+        <option value="10">November</option>
+        <option value="11">December</option>
+        </select>
+
+        <select id="day">
+        <option value="">Day</option>
+        <script>
+            for (let i = 1; i <= 31; i++) {
+            document.write(`<option value="${i}">${i}</option>`);
+            }
+        </script>
+        </select>
+
+        <input type="number" id="year" placeholder="e.g. 2000">
+
+        <button id="btn" >Submit</button>
+        <p id="person"></p>
+        <p id="result"></p>
+        
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
